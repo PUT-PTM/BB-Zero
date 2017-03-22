@@ -6,6 +6,10 @@
 #include "stm32f4xx_dac.h"
 #include "stm32f4xx_usart.h"
 #include "misc.h"
+#include "sound.h"
+
+double ADC_Result;
+int i=0;
 void RCC_Inicjalizacja()
 	{
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE); //glownie do DAC
@@ -29,12 +33,12 @@ void UART_Inicjalizacja()
 	Piny_do_UART.GPIO_PuPd = GPIO_PuPd_UP;
 	Piny_do_UART.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOC, &Piny_do_UART);
-	// ustawienie funkcji alternatywnej dla pinów
+	// ustawienie funkcji alternatywnej dla pinÃ³w
 	GPIO_PinAFConfig(GPIOC, GPIO_PinSource10, GPIO_AF_USART3);
 	GPIO_PinAFConfig(GPIOC, GPIO_PinSource11, GPIO_AF_USART3);
 	//parametry UART
 	USART_InitTypeDef USART_InitStructure;
-	USART_InitStructure.USART_BaudRate = 115200;
+	USART_InitStructure.USART_BaudRate = 9600;
 	USART_InitStructure.USART_WordLength = USART_WordLength_8b;
 	USART_InitStructure.USART_StopBits = USART_StopBits_1;
 	USART_InitStructure.USART_Parity = USART_Parity_No;
@@ -71,13 +75,14 @@ void USART3_IRQHandler(void)
 			GPIO_SetBits(GPIOB,GPIO_Pin_5);//BIN1
 			GPIO_ResetBits(GPIOB,GPIO_Pin_4);//BIN2
 
-			TIM4->CCR2=19;//PWMB
+			TIM4->CCR2=21;//PWMB
 		}
 		else if( USART3->DR == 's' )
 		{
 			GPIO_SetBits(GPIOB,GPIO_Pin_13);//STBY
 			TIM4->CCR1=0;//PWMA
 			TIM4->CCR2=0;//PWMB
+
 		}
 		else if (USART3->DR == 'a')
 		{
@@ -100,6 +105,11 @@ void USART3_IRQHandler(void)
 				GPIO_ResetBits(GPIOB,GPIO_Pin_4);//BIN2
 
 				TIM4->CCR2=19;//PWMB
+		}
+		else if(USART3->DR == 'e')
+		{
+
+
 		}
 
 	}
@@ -152,10 +162,9 @@ void TIM3_IRQHandler(void)
 {
    if(TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET)
    {
-	   if(TIM_GetFlagStatus(TIM3, TIM_FLAG_Update))
-		{
-		   TIM_ClearFlag(TIM3, TIM_FLAG_Update);
-		}
+		   DAC_SetChannel1Data(DAC_Align_12b_R, rawData[i]*ADC_Result/4095);
+		   if(i==85490)i=0;i++;
+
     TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
    }
 }
@@ -164,12 +173,6 @@ void TIM4_IRQHandler(void)
 {
    if(TIM_GetITStatus(TIM4, TIM_IT_Update) != RESET)
    {
-	 // if(TIM_GetFlagStatus(TIM4, TIM_FLAG_Update))
-		//{
-	  // DAC_SetChannel1Data(DAC_Align_12b_R, rawAudio[i]*ADC_Result/4095);
-	   //if(i==156595)i=0;i++;
-//TIM_ClearFlag(TIM4, TIM_FLAG_Update);
-		//}
     TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
    }
 }
@@ -294,13 +297,13 @@ int main(void)
 	UART_Inicjalizacja();
 	UART_Przerwanie();
 	Sterowanie_Inicjalizacja();
-	//TIM3_Inicjalizacja(8399,9999);
-	//TIM3_Przerwanie();
+	TIM3_Inicjalizacja(84,21);
+	TIM3_Przerwanie();
 	TIM4_Inicjalizacja(39,34);
 	//TIM4_Przerwanie();
-	//ADC_PA1_Inicjalizacja();
+	ADC_PA1_Inicjalizacja();
 	//ADC_PA5_Inicjalizacja();
-	//DAC_PA4_Inicjalizacja();
+	DAC_PA4_Inicjalizacja();
 	PWM_TIM4_Inicjalizacja();
 
 	while(1)
