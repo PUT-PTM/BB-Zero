@@ -1,3 +1,5 @@
+#include "inits.h"
+
 void initWheels()
 {
 	RCC_Init();
