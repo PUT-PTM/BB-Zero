@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="5.4.1 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=Modul_bluetooth.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Modul_bluetooth -TC:\CooCox\CoIDE\configuration\ProgramData\Modul_bluetooth/arm-gcc-link.ld -g">
+      <target file="Modul_bluetooth.elf" lastModified="15b142bccb1">
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="15b142bc5b7"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="15b142b16cf"/>
+         <source file="..\obj\main.o" lastModified="15b142bc66b"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="15b142bc73c"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="15b142bc7f0"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="15b142bc893"/>
+         <source file="..\obj\misc.o" lastModified="15b142bc92d"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="15b142bca45"/>
+      </target>
+   </processor>
+</history>

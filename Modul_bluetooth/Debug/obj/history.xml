@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\Modul_bluetooth\cmsis_boot -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\Modul_bluetooth -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\Modul_bluetooth\cmsis -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\Modul_bluetooth\cmsis_lib\include -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\Modul_bluetooth\cmsis_lib">
+      <target file="stm32f4xx_tim.o" lastModified="15b142bca45">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="15b14231503"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="15b142bc73c">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="15b1422e927"/>
+      </target>
+      <target file="misc.o" lastModified="15b142bc92d">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="15b142bb85d"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="15b142bc893">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="15b14239b9b"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="15b142bc7f0">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="15b1422e93a"/>
+      </target>
+      <target file="main.o" lastModified="15b142bc66b">
+         <source file="..\..\..\main.c" lastModified="15b142b78c5"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="15b142bc5b7">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="15b1422e962"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="15b142b16cf">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="15b1422bd3f"/>
+      </target>
+   </processor>
+</history>
