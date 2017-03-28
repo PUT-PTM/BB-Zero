@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="5.4.1 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=Modul_silnikow.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Modul_silnikow -TC:\CooCox\CoIDE\configuration\ProgramData\Modul_silnikow/arm-gcc-link.ld -g">
+      <target file="Modul_silnikow.elf" lastModified="15b141728d0">
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="15b14171fc7"/>
+         <source file="..\obj\main.o" lastModified="15b1417207b"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="15b14172149"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="15b141721f5"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="15b1417228d"/>
+         <source file="..\obj\misc.o" lastModified="15b1417232c"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="15b1417244c"/>
+      </target>
+   </processor>
+</history>

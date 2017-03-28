@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\Modul_silnikow\cmsis_boot -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\Modul_silnikow -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\Modul_silnikow\cmsis_lib\include -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\Modul_silnikow\cmsis -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\Modul_silnikow\cmsis_lib -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero">
+      <target file="stm32f4xx_tim.o" lastModified="15b1417244c">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="15b13f91782"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="15b14172149">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="15b13f8e87f"/>
+      </target>
+      <target file="misc.o" lastModified="15b1417232c">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="15b13f95254"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="15b1417228d">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="15b13fe3be8"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="15b141721f5">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="15b13f8fe37"/>
+      </target>
+      <target file="main.o" lastModified="15b1417207b">
+         <source file="..\..\..\main.c" lastModified="15b14171647"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="15b14171fc7">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="15b13f8cb52"/>
+      </target>
+   </processor>
+</history>
