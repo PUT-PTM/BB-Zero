@@ -1,9 +1,9 @@
-#ifndef _Handlers
-#define _Handlers
+#ifndef _Handlers_
+#define _Handlers_
 #include "inits.h"
 #include "sound.h"
 
-int soundIteration=0;
+int soundIteration;
 
 void TIM3_IRQHandler(void);
 

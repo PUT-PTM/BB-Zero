@@ -4,9 +4,9 @@
 #include "stm32f4xx_tim.h"
 #include "stm32f4xx_dac.h"
 #include "misc.h"
-#include "sound.h"
+//#include "sound.h"
 
-#include "inits.h"
+//#include "inits.h"
 #include "IRQHandlers.h"
 
 

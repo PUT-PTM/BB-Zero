@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="5.4.1 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=BB-Zero.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\BB-Zero -TC:\CooCox\CoIDE\configuration\ProgramData\BB-Zero/arm-gcc-link.ld -g">
+      <target file="BB-Zero.elf" lastModified="15b1ac1aa62">
+         <source file="..\obj\IRQHandlers.o" lastModified="15b1ac19b66"/>
+         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="15b1ac19c0e"/>
+         <source file="..\obj\sound.o" lastModified="15b1ac19f30"/>
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="15b1ac19ff8"/>
+         <source file="..\obj\stm32f4xx_dac.o" lastModified="15b1ac1a0b1"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="15b1ac1a144"/>
+         <source file="..\obj\main.o" lastModified="15b1ac1a1dd"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="15b1ac1a2b5"/>
+         <source file="..\obj\stm32f4xx_adc.o" lastModified="15b1ac1a37d"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="15b1ac1a435"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="15b1ac1a4c9"/>
+         <source file="..\obj\tests.o" lastModified="15b1ac1a572"/>
+         <source file="..\obj\misc.o" lastModified="15b1ac1a605"/>
+         <source file="..\obj\inits.o" lastModified="15b1ac1a6af"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="15b1ac1a7cb"/>
+      </target>
+   </processor>
+</history>

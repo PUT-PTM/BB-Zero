@@ -1,10 +1,9 @@
 #include "inits.h"
 
 void RCC_Init()
-{
-	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC, ENABLE); // glownie do USARTa
-	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE); //PWM
-	RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3, ENABLE);
+{	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE); //PWM
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_DAC, ENABLE);
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
 }
 
 void initAll()
