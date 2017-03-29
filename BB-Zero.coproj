@@ -90,6 +90,12 @@
     <File name="cmsis_lib/include/stm32f4xx_syscfg.h" path="cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_usart.h" path="cmsis_lib/include/stm32f4xx_usart.h" type="1"/>
     <File name="bb_zero_source_files/main.c" path="bb_zero_source_files/main.c" type="1"/>
+    <File name="bb_zero_source_files/tests.c" path="bb_zero_source_files/tests.c" type="1"/>
+    <File name="bb_zero_source_files/tests.h" path="bb_zero_source_files/tests.h" type="1"/>
+    <File name="bb_zero_source_files/IRQhandlers.c" path="bb_zero_source_files/IRQhandlers.c" type="1"/>
+    <File name="bb_zero_source_files/IRQhandlers.h" path="bb_zero_source_files/IRQhandlers.h" type="1"/>
+    <File name="bb_zero_source_files/inits.c" path="bb_zero_source_files/inits.c" type="1"/>
+    <File name="bb_zero_source_files/inits.h" path="bb_zero_source_files/inits.h" type="1"/>
     <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
