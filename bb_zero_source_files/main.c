@@ -5,10 +5,11 @@
 
 int main(void)
 {
-		SystemInit();
+	SystemInit();
     initAll();
-		
     while(1)
     {
+
+
     }
 }

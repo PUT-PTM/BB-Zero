@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\BB-Zero\cmsis_boot -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\BB-Zero\cmsis -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\BB-Zero\bb_zero_source_files -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\BB-Zero\cmsis_lib\include -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\BB-Zero\cmsis_lib -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero\BB-Zero -I..\..\..\..\..\Users\Ja\Desktop\BB-Zero">
+      <target file="stm32f4xx_gpio.o" lastModified="15b1a3480bf">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="15b1a330d63"/>
+      </target>
+      <target file="stm32f4xx_adc.o" lastModified="15b1a34801d">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="15b1a32db22"/>
+      </target>
+      <target file="inits.o" lastModified="15b1a34833e">
+         <source file="..\..\..\bb_zero_source_files\inits.c" lastModified="15b1a330d4a"/>
+      </target>
+      <target file="stm32f4xx_tim.o" lastModified="15b1a348457">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="15b1a330d66"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="15b1a348168">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="15b1a330d59"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="15b1a347de3">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="15b1a330d53"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="15b1a347bfe">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="15b1a330d68"/>
+      </target>
+      <target file="stm32f4xx_syscfg.o" lastModified="15b1a347b26">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="15b1a32db26"/>
+      </target>
+      <target file="main.o" lastModified="15b1a649b76">
+         <source file="..\..\..\bb_zero_source_files\main.c" lastModified="15b1a649562"/>
+      </target>
+      <target file="stm32f4xx_dac.o" lastModified="15b1a347d5f">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dac.c" lastModified="15b1a32db23"/>
+      </target>
+      <target file="IRQhandlers.o" lastModified="15b1a347ca7">
+         <source file="..\..\..\bb_zero_source_files\IRQhandlers.c" lastModified="15b1a330d49"/>
+      </target>
+      <target file="tests.o" lastModified="15b1a353be8">
+         <source file="..\..\..\bb_zero_source_files\tests.c" lastModified="15b1a3529e8"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="15b1a347f54">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="15b1a330d64"/>
+      </target>
+      <target file="misc.o" lastModified="15b1a3482a5">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="15b1a330d62"/>
+      </target>
+   </processor>
+</history>
