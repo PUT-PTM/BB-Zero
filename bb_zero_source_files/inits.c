@@ -1,5 +1,17 @@
 #include "inits.h"
 
+void initAll()
+{
+	RCC_Init();
+}
+
+void RCC_Init()
+{
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);//sterowanie kierunkiem obrotu
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE); //PWM
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE); //PWM
+}
+
 void initWheels()
 {
 	RCC_Init();
@@ -17,13 +29,6 @@ void initWheels()
 	//PB5 - BIN1
 	//PB4 - BIN2
 	//PB13 - STBY
-}
-
-void RCC_Init()
-{
-	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);//sterowanie kierunkiem obrotu
-	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE); //PWM
-	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE); //PWM
 }
 
 void PWM_TIM4_Init()

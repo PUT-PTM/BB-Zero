@@ -5,7 +5,8 @@
 #include "stm32f4xx_syscfg.h"
 #include "misc.h"
 
+void initAll();
+void RCC_Init();
 void initWheels();
 
-void RCC_Init();
 void PWM_TIM4_Init();
