@@ -6,5 +6,6 @@
 int soundIteration;
 
 void TIM3_IRQHandler(void);
+void USART3_IRQHandler(void);
 
 #endif
