@@ -1,0 +1,10 @@
+*.cogui
+*.comarker
+*.pbxproj
+*.bin
+*.elf
+*.hex
+*.map
+*.o
+logs/
+BB-Zero/
