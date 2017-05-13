@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Ja\Desktop\BB_Zero(Projekt)\BB-Zero\cmsis_lib -I..\..\..\..\..\Users\Ja\Desktop\BB_Zero(Projekt)\BB-Zero -I..\..\..\..\..\Users\Ja\Desktop\BB_Zero(Projekt)\BB-Zero\bb_zero_source_files -I..\..\..\..\..\Users\Ja\Desktop\BB_Zero(Projekt) -I..\..\..\..\..\Users\Ja\Desktop\BB_Zero(Projekt)\BB-Zero\cmsis_boot -I..\..\..\..\..\Users\Ja\Desktop\BB_Zero(Projekt)\BB-Zero\cmsis_lib\include -I..\..\..\..\..\Users\Ja\Desktop\BB_Zero(Projekt)\BB-Zero\cmsis">
+      <target file="stm32f4xx_gpio.o" lastModified="15c018eb216">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="15b3a155c36"/>
+      </target>
+      <target file="tm_stm32f4_mpu6050.o" lastModified="15c018eb113">
+         <source file="..\..\..\bb_zero_source_files\tm_stm32f4_mpu6050.c" lastModified="15bc92bbcbf"/>
+      </target>
+      <target file="tm_stm32f4_i2c.o" lastModified="15c018eb19d">
+         <source file="..\..\..\bb_zero_source_files\tm_stm32f4_i2c.c" lastModified="15bc924d6d0"/>
+      </target>
+      <target file="inits.o" lastModified="15c018eb4e8">
+         <source file="..\..\..\bb_zero_source_files\inits.c" lastModified="15b5c4541ab"/>
+      </target>
+      <target file="tm_stm32_ahrs_imu.o" lastModified="15c018eb01b">
+         <source file="..\..\..\bb_zero_source_files\tm_stm32_ahrs_imu.c" lastModified="15becfcb38f"/>
+      </target>
+      <target file="tm_stm32f4_gpio.o" lastModified="15c018eb567">
+         <source file="..\..\..\bb_zero_source_files\tm_stm32f4_gpio.c" lastModified="15bc8ecc7dd"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="15c018eae34">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="15b3a155c25"/>
+      </target>
+      <target file="stm32f4xx_tim.o" lastModified="15c018eb644">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="15b3a155c3a"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="15c018eb281">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="15b3a155c2d"/>
+      </target>
+      <target file="misc.o" lastModified="15c018eb472">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="15b3a155c35"/>
+      </target>
+      <target file="IRQHandlers.o" lastModified="15c018eacd1">
+         <source file="..\..\..\bb_zero_source_files\IRQHandlers.c" lastModified="15b3a365889"/>
+      </target>
+      <target file="stm32f4xx_spi.o" lastModified="15c018eb377">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="15b5c025463"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="15c018eaf6e">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="15b3a155c38"/>
+      </target>
+      <target file="stm32f4xx_dac.o" lastModified="15c018eaddd">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dac.c" lastModified="15b3a1dcf1d"/>
+      </target>
+      <target file="stm32f4xx_i2c.o" lastModified="15c018eb407">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="15b95701d8f"/>
+      </target>
+      <target file="tm_stm32f4_delay.o" lastModified="15c018eb09f">
+         <source file="..\..\..\bb_zero_source_files\tm_stm32f4_delay.c" lastModified="15bc8eb84b5"/>
+      </target>
+      <target file="tests.o" lastModified="15c018eb2ee">
+         <source file="..\..\..\bb_zero_source_files\tests.c" lastModified="15b39ee2636"/>
+      </target>
+      <target file="main.o" lastModified="15c018eaec3">
+         <source file="..\..\..\bb_zero_source_files\main.c" lastModified="15c018eaa51"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="15c018ead60">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="15b3a1d93e0"/>
+      </target>
+   </processor>
+</history>

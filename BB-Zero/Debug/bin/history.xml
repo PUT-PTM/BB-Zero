@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="5.4.1 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=BB-Zero.map -O0 --gc-sections -lm -lgcc -lc -LC:\CooCox\CoIDE\configuration\ProgramData\BB-Zero -TC:\CooCox\CoIDE\configuration\ProgramData\BB-Zero/arm-gcc-link.ld -g">
+      <target file="BB-Zero.elf" lastModified="15c018eb880">
+         <source file="..\obj\IRQHandlers.o" lastModified="15c018eacd1"/>
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="15c018ead60"/>
+         <source file="..\obj\stm32f4xx_dac.o" lastModified="15c018eaddd"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="15c018eae34"/>
+         <source file="..\obj\main.o" lastModified="15c018eaec3"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="15c018eaf6e"/>
+         <source file="..\obj\tm_stm32_ahrs_imu.o" lastModified="15c018eb01b"/>
+         <source file="..\obj\tm_stm32f4_delay.o" lastModified="15c018eb09f"/>
+         <source file="..\obj\tm_stm32f4_mpu6050.o" lastModified="15c018eb113"/>
+         <source file="..\obj\tm_stm32f4_i2c.o" lastModified="15c018eb19d"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="15c018eb216"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="15c018eb281"/>
+         <source file="..\obj\tests.o" lastModified="15c018eb2ee"/>
+         <source file="..\obj\stm32f4xx_spi.o" lastModified="15c018eb377"/>
+         <source file="..\obj\stm32f4xx_i2c.o" lastModified="15c018eb407"/>
+         <source file="..\obj\misc.o" lastModified="15c018eb472"/>
+         <source file="..\obj\inits.o" lastModified="15c018eb4e8"/>
+         <source file="..\obj\tm_stm32f4_gpio.o" lastModified="15c018eb567"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="15c018eb644"/>
+      </target>
+   </processor>
+</history>
