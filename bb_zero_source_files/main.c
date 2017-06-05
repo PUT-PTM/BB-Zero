@@ -102,7 +102,7 @@ int main(void)
 
 	            TM_AHRSIMU_UpdateIMU(&IMUstruct, AHRSIMU_DEG2RAD(gx), AHRSIMU_DEG2RAD(gy), AHRSIMU_DEG2RAD(gz), ax, ay, az);
 
-				angle = (0.98) * ((IMUstruct.Pitch + (gx * 0.01)) + ((0.02) * ay));
+				angle = (0.98) * ((IMUstruct.Pitch + (gx * 0.01)) + ((0.02) * ax));
 
 	            PID(angle);
 
