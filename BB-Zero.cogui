@@ -18,9 +18,9 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/main.c" title="main.c" tooltip="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/main.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="D:/Dropbox/PUT/IV Semestr/PTM/Projekt/BB-Zero/bb_zero_source_files/main.c" title="main.c" tooltip="D:/Dropbox/PUT/IV Semestr/PTM/Projekt/BB-Zero/bb_zero_source_files/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BB-Zero/bb_zero_source_files/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1185" selectionTopPixel="410"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3294" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="inits.c" partName="inits.c" path="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/inits.c" title="inits.c" tooltip="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/inits.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BB-Zero/bb_zero_source_files/inits.c"/>
@@ -410,47 +410,48 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="IRQhandlers.h" tooltip="BB-Zero/bb_zero_source_files/IRQhandlers.h">
-<persistable path="/BB-Zero/bb_zero_source_files/IRQhandlers.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="IRQhandlers.c" tooltip="BB-Zero/bb_zero_source_files/IRQhandlers.c">
-<persistable path="/BB-Zero/bb_zero_source_files/IRQhandlers.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="inits.c" tooltip="BB-Zero/bb_zero_source_files/inits.c">
-<persistable path="/BB-Zero/bb_zero_source_files/inits.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32f4_mpu6050.h" tooltip="BB-Zero/bb_zero_source_files/tm_stm32f4_mpu6050.h">
-<persistable path="/BB-Zero/bb_zero_source_files/tm_stm32f4_mpu6050.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32_ahrs_imu.c" tooltip="BB-Zero/bb_zero_source_files/tm_stm32_ahrs_imu.c">
-<persistable path="/BB-Zero/bb_zero_source_files/tm_stm32_ahrs_imu.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32_ahrs_imu.h" tooltip="BB-Zero/bb_zero_source_files/tm_stm32_ahrs_imu.h">
-<persistable path="/BB-Zero/bb_zero_source_files/tm_stm32_ahrs_imu.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32f4_delay.h" tooltip="BB-Zero/bb_zero_source_files/tm_stm32f4_delay.h">
-<persistable path="/BB-Zero/bb_zero_source_files/tm_stm32f4_delay.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" tooltip="BB-Zero/cmsis_boot/startup/startup_stm32f4xx.c">
-<persistable path="/BB-Zero/cmsis_boot/startup/startup_stm32f4xx.c"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32f4_i2c.h" tooltip="BB-Zero/bb_zero_source_files/tm_stm32f4_i2c.h">
 <persistable path="/BB-Zero/bb_zero_source_files/tm_stm32f4_i2c.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32f4_mpu6050.c" tooltip="BB-Zero/bb_zero_source_files/tm_stm32f4_mpu6050.c">
-<persistable path="/BB-Zero/bb_zero_source_files/tm_stm32f4_mpu6050.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32f4_gpio.h" tooltip="BB-Zero/bb_zero_source_files/tm_stm32f4_gpio.h">
+<persistable path="/BB-Zero/bb_zero_source_files/tm_stm32f4_gpio.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32f4_i2c.c" tooltip="BB-Zero/bb_zero_source_files/tm_stm32f4_i2c.c">
+<persistable path="/BB-Zero/bb_zero_source_files/tm_stm32f4_i2c.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="defines.h" tooltip="BB-Zero/bb_zero_source_files/defines.h">
 <persistable path="/BB-Zero/bb_zero_source_files/defines.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32f4_mpu6050.h" tooltip="Nowy/cmsis_lib/include/tm_stm32f4_mpu6050.h">
-<persistable path="/Nowy/cmsis_lib/include/tm_stm32f4_mpu6050.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="inits.h" tooltip="BB-Zero/bb_zero_source_files/inits.h">
+<persistable path="/BB-Zero/bb_zero_source_files/inits.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32f4_gpio.h" tooltip="Nowy/cmsis_lib/include/tm_stm32f4_gpio.h">
-<persistable path="/Nowy/cmsis_lib/include/tm_stm32f4_gpio.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="IRQhandlers.c" tooltip="BB-Zero/bb_zero_source_files/IRQhandlers.c">
+<persistable path="/BB-Zero/bb_zero_source_files/IRQhandlers.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32f4_mpu6050.c" tooltip="Nowy/cmsis_lib/source/tm_stm32f4_mpu6050.c">
-<persistable path="/Nowy/cmsis_lib/source/tm_stm32f4_mpu6050.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="IRQhandlers.h" tooltip="BB-Zero/bb_zero_source_files/IRQhandlers.h">
+<persistable path="/BB-Zero/bb_zero_source_files/IRQhandlers.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tests.c" tooltip="BB-Zero/bb_zero_source_files/tests.c">
+<persistable path="/BB-Zero/bb_zero_source_files/tests.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tests.h" tooltip="BB-Zero/bb_zero_source_files/tests.h">
+<persistable path="/BB-Zero/bb_zero_source_files/tests.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="inits.c" tooltip="BB-Zero/bb_zero_source_files/inits.c">
+<persistable path="/BB-Zero/bb_zero_source_files/inits.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="test.c" tooltip="BB-Zero/bb_zero_source_files/test.c">
+<persistable path="/BB-Zero/bb_zero_source_files/test.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="test.h" tooltip="BB-Zero/bb_zero_source_files/test.h">
+<persistable path="/BB-Zero/bb_zero_source_files/test.h"/>
+</file>
+<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
+<persistable>&#x0A;<subPage/>
+</persistable>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="BB-Zero/bb_zero_source_files/main.c">
+<persistable path="/BB-Zero/bb_zero_source_files/main.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="attributes.h" tooltip="Nowy/cmsis_lib/include/attributes.h">
 <persistable path="/Nowy/cmsis_lib/include/attributes.h"/>

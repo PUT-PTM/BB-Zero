@@ -17,52 +17,41 @@
 #include "tm_stm32f4_delay.h"
 #include "tm_stm32_ahrs_imu.h"
 
-int16_t Acc,Gyr;
-float Acc_Result, Gyr_Result;
 float Acc_Offset=750.0, Gyr_Offset=0.0;
-float angle=0;
+float angle = 0;
 float motor;
-float Gyr_Result2;
 float ax,gx,ay,gy,az,gz;
 TM_MPU6050_t MPU6050_Data0;
-
 
 float current_position;
 float error,last_error=0.0;
 float integral=0.0;
 float derivative=0.0;
 
-
 void PID(float angle)
 {
 	current_position = angle;
 
-		error = target_position - current_position;
+	error = target_position - current_position;
 
-		if(integral>100) integral = 100;
-		if(integral<-100) integral = -100;
+	if(integral>100) integral = 100;
+	if(integral<-100) integral = -100;
 
-		integral = integral + error;
+	integral = integral + error;
 
+	derivative = error - last_error;
 
-		derivative = error - last_error;
+	motor = (kp*error) + (ki*integral) + (kd*derivative);
 
-		motor = (kp*error) + (ki*integral) + (kd*derivative);
+	if(motor>99) motor = 99;
+	if(motor<-99) motor = -99;
 
-		if(motor>99) motor = 99;
-		if(motor<-99) motor = -99;
-
-		last_error = error;
-
+	last_error = error;
 }
 
 TM_AHRSIMU_t IMUstruct;
 int main(void)
 {
-
-
-
-
 	    uint8_t sensor1 = 0;
 	    /* Initialize system */
 	    SystemInit();

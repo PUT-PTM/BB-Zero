@@ -32,7 +32,7 @@
 
 ## Attributions
 
-  See [Tools](#Tools)
+  See [Tools](#tools)
 
 ## License
 
