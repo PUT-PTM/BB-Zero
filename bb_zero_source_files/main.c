@@ -39,7 +39,6 @@ float kd=1;
 
 void PID(float angle)
 {
-
 	current_position = angle;
 
 	error = target_position - current_position;
@@ -103,7 +102,9 @@ int main(void)
 
 	            TM_AHRSIMU_UpdateIMU(&IMUstruct, AHRSIMU_DEG2RAD(gx), AHRSIMU_DEG2RAD(gy), AHRSIMU_DEG2RAD(gz), ax, ay, az);
 
-	            PID(IMUstruct.Pitch);
+				angle = (0.98) * ((IMUstruct.Pitch + (gx * 0.01)) + ((0.02) * ay));
+
+	            PID(angle);
 
 	            if(motor < 0)
 	            {
