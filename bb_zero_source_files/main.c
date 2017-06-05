@@ -1,21 +1,4 @@
-#include "stm32f4xx_conf.h"
-#include "stm32f4xx_gpio.h"
-#include "stm32f4xx_rcc.h"
-#include "stm32f4xx_tim.h"
-#include "stm32f4xx_dac.h"
-#include "misc.h"
-#include "sound.h"
 #include "inits.h"
-#include "IRQHandlers.h"
-#include "stm32f4xx_spi.h"
-#include "stm32f4xx_i2c.h"
-#include "tm_stm32f4_mpu6050.h"
-#include "defines.h"
-#include "attributes.h"
-#include "tm_stm32f4_gpio.h"
-#include "tm_stm32f4_i2c.h"
-#include "tm_stm32f4_delay.h"
-#include "tm_stm32_ahrs_imu.h"
 
 //variables for reading values and motor output
 float Acc_Offset=750.0, Gyr_Offset=0.0;

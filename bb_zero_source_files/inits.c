@@ -9,18 +9,16 @@ void RCC_Init()
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE); //PWM
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC, ENABLE); // glownie do USARTa
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3, ENABLE);
-
 }
 
 void initAll()
 {
-    	RCC_Init();
+    RCC_Init();
 	TIM3_Init(60,15);
 	DAC_PA4_Init();
 	PWM_TIM4_Init();
 	initWheels();
 	initBluetooth();
-
 }
 
 void TIM3_Init(int period,int prescaler)
@@ -55,14 +53,15 @@ void DAC_PA4_Init()
 	DAC_PA4_Inicjalizacja.GPIO_PuPd = GPIO_PuPd_NOPULL;
 	GPIO_Init(GPIOA, &DAC_PA4_Inicjalizacja);
 
-		DAC_InitTypeDef DAC_PA4_Inicjalizacja_Parametry;
-		DAC_PA4_Inicjalizacja_Parametry.DAC_Trigger = DAC_Trigger_None;
-		DAC_PA4_Inicjalizacja_Parametry.DAC_WaveGeneration = DAC_WaveGeneration_None;
-		DAC_PA4_Inicjalizacja_Parametry.DAC_LFSRUnmask_TriangleAmplitude = DAC_LFSRUnmask_Bit0;
-		DAC_PA4_Inicjalizacja_Parametry.DAC_OutputBuffer = DAC_OutputBuffer_Enable;
-		DAC_Init(DAC_Channel_1, &DAC_PA4_Inicjalizacja_Parametry);
-		DAC_Cmd(DAC_Channel_1, ENABLE);
+	DAC_InitTypeDef DAC_PA4_Inicjalizacja_Parametry;
+	DAC_PA4_Inicjalizacja_Parametry.DAC_Trigger = DAC_Trigger_None;
+	DAC_PA4_Inicjalizacja_Parametry.DAC_WaveGeneration = DAC_WaveGeneration_None;
+	DAC_PA4_Inicjalizacja_Parametry.DAC_LFSRUnmask_TriangleAmplitude = DAC_LFSRUnmask_Bit0;
+	DAC_PA4_Inicjalizacja_Parametry.DAC_OutputBuffer = DAC_OutputBuffer_Enable;
+	DAC_Init(DAC_Channel_1, &DAC_PA4_Inicjalizacja_Parametry);
+	DAC_Cmd(DAC_Channel_1, ENABLE);
 }
+
 void initWheels()
 {
 	RCC_Init();
@@ -117,8 +116,9 @@ void PWM_TIM4_Init()
 	TIM_OC2Init(TIM4, &TIM_OCInitStructure);
 	TIM_OC2PreloadConfig(TIM4, TIM_OCPreload_Enable);
 }
+
 void initBluetooth()
-	{
+{
 	// konfiguracja linii Rx(PC11) i Tx(PC10)
 	GPIO_InitTypeDef Piny_do_UART;
 	Piny_do_UART.GPIO_Pin = GPIO_Pin_10 | GPIO_Pin_11;
@@ -152,5 +152,4 @@ void initBluetooth()
 	UART_Przerwanie.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&UART_Przerwanie);
 	NVIC_EnableIRQ(USART3_IRQn);
-	}
-
+}
