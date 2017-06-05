@@ -38,7 +38,7 @@
 
   MIT
 
-##Credits
+## Credits
 
   Oskar Rutkowski, Patryk Mroczyński, Jakub Wiśniewski
   
