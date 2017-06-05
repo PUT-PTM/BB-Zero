@@ -1,6 +1,13 @@
 #include "IRQHandlers.h"
 #include "sound.h"
+#include "math.h"
 int soundIteration=0;
+float kp=16.5;
+float ki=0.7;
+float kd=40;
+float target_position = -1/12;
+int k =0;
+int w,g,o;
 void TIM3_IRQHandler(void)
 {
    if(TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET)
@@ -15,56 +22,58 @@ void TIM3_IRQHandler(void)
     TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
    }
 }
+
+
+void interpreter()
+{
+
+	if(p[1] >= 48 && p[1]<=57)
+		w = p[1]-48;
+	else return;
+
+	if(p[2] >= 48 && p[2]<=57)
+			g = p[2]-48;
+	else return;
+
+	if(p[4] >= 48 && p[4]<=57)
+			o = p[4]-48;
+		else return;
+	if(p[3] == 'm')
+		o=-o;
+
+	if(p[0] == 'w')
+	{
+		target_position = (w*10+g) * pow(10,o);
+	}
+	if(p[0] == 's')
+		{
+		target_position = -((w*10+g) * pow(10,o));
+		}
+	else if(p[0] == 'p')
+	{
+		kp = (w*10+g) * pow(10,o);
+	}
+	else if(p[0] == 'i')
+		{
+			ki = (w*10+g) * pow(10,o);
+		}
+	else if(p[0] == 'd')
+		{
+			kd = (w*10+g) * pow(10,o);
+		}
+}
+
 void USART3_IRQHandler(void)
 {
 	if(USART_GetITStatus(USART3, USART_IT_RXNE) != RESET)
 	{
-		if( USART3->DR == 'w' )
-				{
-					GPIO_SetBits(GPIOB,GPIO_Pin_13);//STBY
 
-					GPIO_SetBits(GPIOB,GPIO_Pin_12);//AIN1
-					GPIO_ResetBits(GPIOB,GPIO_Pin_11);//AIN2
-
-					GPIO_SetBits(GPIOB,GPIO_Pin_4);//BIN2
-					GPIO_ResetBits(GPIOB,GPIO_Pin_5);//BIN1
-
-					TIM4->CCR1=19;//PWMA
-					TIM4->CCR2=19;//PWMB
-				}
-				else if( USART3->DR == 's' )
-				{
-					GPIO_SetBits(GPIOB,GPIO_Pin_13);//STBY
-					TIM4->CCR1=0;//PWMA
-					TIM4->CCR2=0;//PWMB
-
-				}
-				else if (USART3->DR == 'a')
-				{
-					GPIO_SetBits(GPIOB,GPIO_Pin_13);//STBY
-
-						GPIO_SetBits(GPIOB,GPIO_Pin_12);//AIN1
-						GPIO_ResetBits(GPIOB,GPIO_Pin_11);//AIN2
-
-						TIM4->CCR1=19;//PWMA
-
-						TIM4->CCR2=0;//PWMB
-				}
-				else if(USART3->DR == 'd')
-				{
-					GPIO_SetBits(GPIOB,GPIO_Pin_13);//STBY
-
-						TIM4->CCR1=0;//PWMA
-
-						GPIO_SetBits(GPIOB,GPIO_Pin_5);//BIN1
-						GPIO_ResetBits(GPIOB,GPIO_Pin_4);//BIN2
-
-						TIM4->CCR2=19;//PWMB
-				}
-				else if(USART3->DR == 'e')
-				{
-					TIM_Cmd(TIM3,ENABLE);
-
-				}
+		p[k] = USART3->DR;
+		k++;
+		if(k==5)
+		{
+		interpreter();
+		k=0;
+		}
 	}
 }

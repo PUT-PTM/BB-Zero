@@ -11,28 +11,33 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="2"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/main.c" title="main.c" tooltip="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BB-Zero/bb_zero_source_files/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="854" selectionTopPixel="386"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1185" selectionTopPixel="410"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32_ahrs_imu.c" partName="tm_stm32_ahrs_imu.c" path="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/tm_stm32_ahrs_imu.c" title="tm_stm32_ahrs_imu.c" tooltip="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/tm_stm32_ahrs_imu.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BB-Zero/bb_zero_source_files/tm_stm32_ahrs_imu.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="9992" selectionTopPixel="3217"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="inits.c" partName="inits.c" path="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/inits.c" title="inits.c" tooltip="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/inits.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BB-Zero/bb_zero_source_files/inits.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="2" selectionOffset="2931" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32f4_mpu6050.h" partName="tm_stm32f4_mpu6050.h" path="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/tm_stm32f4_mpu6050.h" title="tm_stm32f4_mpu6050.h" tooltip="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/tm_stm32f4_mpu6050.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BB-Zero/bb_zero_source_files/tm_stm32f4_mpu6050.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="27" selectionOffset="5177" selectionTopPixel="3110"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="IRQhandlers.c" partName="IRQhandlers.c" path="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/IRQHandlers.c" title="IRQhandlers.c" tooltip="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/IRQHandlers.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BB-Zero/bb_zero_source_files/IRQhandlers.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="914" selectionTopPixel="420"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="IRQhandlers.h" partName="IRQhandlers.h" path="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/IRQHandlers.h" title="IRQhandlers.h" tooltip="C:/Users/Ja/Desktop/BB_Zero(Projekt)/BB-Zero/bb_zero_source_files/IRQHandlers.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BB-Zero/bb_zero_source_files/IRQhandlers.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="281" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="8">
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/BB-Zero"/>
 <element path="/BB-Zero/bb_zero_source_files"/>
@@ -42,7 +47,7 @@
 <element path="/BB-Zero/cmsis_lib/source"/>
 </expanded>
 <selection>
-<element path="/BB-Zero/bb_zero_source_files/main.c"/>
+<element path="/BB-Zero/bb_zero_source_files/IRQhandlers.c"/>
 </selection>
 </viewState>
 </view>
@@ -197,49 +202,34 @@
 <view id="org.coocox.builder.ui.views.ProjectView"/>
 <fastViewBars/>
 <viewLayoutRec closeable="false" id="org.eclipse.debug.ui.DebugView"/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@9f90c">
-<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">
-<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@9f90c">&#x0A;<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">&#x0A;<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7493671" ratioLeft="592" ratioRight="198" relationship="2" relative="org.eclipse.ui.internal.ViewStack@9f90c">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7493671" ratioLeft="592" ratioRight="198" relationship="2" relative="org.eclipse.ui.internal.ViewStack@9f90c">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1161ded" ratio="0.699187" ratioLeft="516" ratioRight="222" relationship="4" relative="org.eclipse.ui.internal.ViewStack@9f90c">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1161ded" ratio="0.699187" ratioLeft="516" ratioRight="222" relationship="4" relative="org.eclipse.ui.internal.ViewStack@9f90c">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f2c085" ratio="0.5" ratioLeft="395" ratioRight="395" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1161ded">
-<folder activePageID="org.coocox.codebugger.trace.ui.traceview" appearance="2" expanded="2">
-<page content="org.coocox.codebugger.trace.ui.traceview" label="Semihosting"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f2c085" ratio="0.5" ratioLeft="395" ratioRight="395" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1161ded">&#x0A;<folder activePageID="org.coocox.codebugger.trace.ui.traceview" appearance="2" expanded="2">&#x0A;<page content="org.coocox.codebugger.trace.ui.traceview" label="Semihosting"/>
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1d96741" ratio="0.7493671" ratioLeft="592" ratioRight="198" relationship="2" relative="org.eclipse.ui.internal.ViewStack@9f90c">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1d96741" ratio="0.7493671" ratioLeft="592" ratioRight="198" relationship="2" relative="org.eclipse.ui.internal.ViewStack@9f90c">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.coocox.coassistant.view.CoAssistantView_debug" label="LabelNotFound"/>
@@ -255,162 +245,163 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BB-Zero/bb_zero_source_files/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BB-Zero/bb_zero_source_files/tm_stm32f4_delay.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BB-Zero/bb_zero_source_files/tm_stm32_ahrs_imu.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BB-Zero/bb_zero_source_files/tm_stm32f4_delay.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BB-Zero/bb_zero_source_files/tm_stm32_ahrs_imu.h"/>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</editor>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BB-Zero/bb_zero_source_files/tm_stm32f4_mpu6050.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BB-Zero/bb_zero_source_files/IRQhandlers.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BB-Zero/bb_zero_source_files/inits.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BB-Zero/bb_zero_source_files/IRQhandlers.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BB-Zero/bb_zero_source_files/IRQhandlers.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BB-Zero/bb_zero_source_files/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BB-Zero/bb_zero_source_files/inits.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BB-Zero/bb_zero_source_files/IRQhandlers.h"/>
 </editors>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1201" y="0"/>
+<item historyLabel="IRQhandlers.h" index="3">
+<position info="not_deleted" x="248" y="0"/>
+</item>
+<item historyLabel="inits.c" index="2">
+<position info="not_deleted" x="2931" y="2"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1236" y="0"/>
+<position info="not_deleted" x="704" y="0"/>
+</item>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="522" y="0"/>
+</item>
+<item historyLabel="IRQhandlers.h" index="3">
+<position info="not_deleted" x="112" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1256" y="0"/>
+<position info="not_deleted" x="704" y="0"/>
+</item>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="522" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1357" y="0"/>
+<position info="not_deleted" x="704" y="0"/>
 </item>
-<item historyLabel="tm_stm32f4_delay.h" index="1">
-<position info="not_deleted" x="8945" y="13"/>
+<item historyLabel="IRQhandlers.h" index="3">
+<position info="not_deleted" x="112" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1357" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1350" y="15"/>
-</item>
-<item historyLabel="tm_stm32_ahrs_imu.c" index="2">
-<position info="not_deleted" x="2517" y="4"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1350" y="15"/>
-</item>
-<item historyLabel="tm_stm32f4_delay.h" index="3">
-<position info="not_deleted" x="8945" y="13"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1391" y="0"/>
-</item>
-<item historyLabel="tm_stm32_ahrs_imu.c" index="2">
-<position info="not_deleted" x="2517" y="4"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1391" y="0"/>
-</item>
-<item historyLabel="tm_stm32_ahrs_imu.c" index="2">
-<position info="not_deleted" x="2517" y="4"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1391" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2173" y="0"/>
-</item>
-<item historyLabel="tm_stm32_ahrs_imu.c" index="2">
-<position info="not_deleted" x="1475" y="36"/>
-</item>
-<item historyLabel="tm_stm32_ahrs_imu.c" index="2">
-<position info="not_deleted" x="1376" y="0"/>
-</item>
-<item historyLabel="tm_stm32_ahrs_imu.h" index="4">
-<position info="not_deleted" x="2909" y="6"/>
-</item>
-<item historyLabel="Configuration" index="5"/>
-<item historyLabel="tm_stm32_ahrs_imu.h" index="4">
-<position info="not_deleted" x="2909" y="6"/>
-</item>
-<item historyLabel="tm_stm32_ahrs_imu.c" index="2">
-<position info="not_deleted" x="1376" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1364" y="0"/>
-</item>
-<item historyLabel="tm_stm32_ahrs_imu.c" index="2">
-<position info="not_deleted" x="2517" y="4"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1391" y="0"/>
-</item>
-<item historyLabel="tm_stm32_ahrs_imu.c" index="2">
-<position info="not_deleted" x="2517" y="4"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position/>
-</item>
-<item historyLabel="tm_stm32_ahrs_imu.c" index="2">
-<position info="not_deleted" x="9517" y="3"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1797" y="0"/>
-</item>
-<item historyLabel="tm_stm32_ahrs_imu.c" index="2">
-<position info="not_deleted" x="9992" y="11"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1712" y="0"/>
-</item>
-<item historyLabel="tm_stm32f4_mpu6050.h" index="6">
+<item historyLabel="IRQhandlers.c" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1239" y="0"/>
+<position info="not_deleted" x="704" y="0"/>
 </item>
-<item historyLabel="tm_stm32f4_mpu6050.h" index="6">
-<position info="not_deleted" x="5177" y="27"/>
+<item historyLabel="IRQhandlers.h" index="3">
+<position info="not_deleted" x="112" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1239" y="0"/>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1068" y="0"/>
+<item historyLabel="IRQhandlers.h" index="3">
+<position info="not_deleted" x="112" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1084" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1102" y="0"/>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="3" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
+<position info="not_deleted" x="704" y="0"/>
+</item>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="38" y="0"/>
+</item>
+<item historyLabel="inits.c" index="2">
+<position info="not_deleted" x="2931" y="2"/>
+</item>
+<item historyLabel="IRQhandlers.h" index="3">
+<position info="not_deleted" x="109" y="2"/>
+</item>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="876" y="2"/>
+</item>
+<item historyLabel="inits.c" index="2">
+<position info="not_deleted" x="2931" y="2"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1072" y="2"/>
+</item>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="876" y="2"/>
+</item>
+<item historyLabel="inits.c" index="2">
+<position info="not_deleted" x="2931" y="2"/>
+</item>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="876" y="2"/>
+</item>
+<item historyLabel="IRQhandlers.h" index="3">
+<position info="not_deleted" x="112" y="0"/>
+</item>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="876" y="2"/>
+</item>
+<item historyLabel="IRQhandlers.h" index="4">
+<position info="not_deleted" x="112" y="0"/>
+</item>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="538" y="18"/>
+</item>
+<item historyLabel="IRQhandlers.h" index="4">
+<position info="not_deleted" x="211" y="0"/>
+</item>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="684" y="0"/>
+</item>
+<item historyLabel="IRQhandlers.h" index="4">
+<position info="not_deleted" x="211" y="0"/>
+</item>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="186" y="0"/>
+</item>
+<item historyLabel="IRQhandlers.h" index="4">
+<position info="not_deleted" x="190" y="0"/>
+</item>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="186" y="0"/>
+</item>
+<item historyLabel="main.c" index="5">
+<position info="not_deleted" x="834" y="0"/>
+</item>
+<item historyLabel="IRQhandlers.c" index="1">
 <position/>
 </item>
-<item historyLabel="main.c" index="0">
+<item historyLabel="inits.c" index="6">
+<position info="not_deleted" x="2931" y="2"/>
+</item>
+<item historyLabel="IRQhandlers.c" index="1">
 <position/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2616" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1156" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1245" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
+<item historyLabel="main.c" index="5">
 <position/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="1222" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position/>
+<item historyLabel="main.c" index="5">
+<position info="not_deleted" x="1185" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="858" y="16"/>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="1296" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="827" y="15"/>
+<item historyLabel="IRQhandlers.h" index="7">
+<position info="not_deleted" x="281" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="869" y="0"/>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="914" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="0">
-<position info="not_deleted" x="872" y="2"/>
+<item historyLabel="IRQhandlers.h" index="7">
+<position info="not_deleted" x="281" y="0"/>
+</item>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="914" y="0"/>
+</item>
+<item historyLabel="main.c" index="5">
+<position info="not_deleted" x="1185" y="0"/>
+</item>
+<item historyLabel="IRQhandlers.c" index="1">
+<position info="not_deleted" x="914" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="5">
+<position info="not_deleted" x="1185" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -419,16 +410,20 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="IRQhandlers.h" tooltip="BB-Zero/bb_zero_source_files/IRQhandlers.h">
+<persistable path="/BB-Zero/bb_zero_source_files/IRQhandlers.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="IRQhandlers.c" tooltip="BB-Zero/bb_zero_source_files/IRQhandlers.c">
+<persistable path="/BB-Zero/bb_zero_source_files/IRQhandlers.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="inits.c" tooltip="BB-Zero/bb_zero_source_files/inits.c">
+<persistable path="/BB-Zero/bb_zero_source_files/inits.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32f4_mpu6050.h" tooltip="BB-Zero/bb_zero_source_files/tm_stm32f4_mpu6050.h">
 <persistable path="/BB-Zero/bb_zero_source_files/tm_stm32f4_mpu6050.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32_ahrs_imu.c" tooltip="BB-Zero/bb_zero_source_files/tm_stm32_ahrs_imu.c">
 <persistable path="/BB-Zero/bb_zero_source_files/tm_stm32_ahrs_imu.c"/>
-</file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
-<persistable>
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</persistable>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32_ahrs_imu.h" tooltip="BB-Zero/bb_zero_source_files/tm_stm32_ahrs_imu.h">
 <persistable path="/BB-Zero/bb_zero_source_files/tm_stm32_ahrs_imu.h"/>
@@ -459,12 +454,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="attributes.h" tooltip="Nowy/cmsis_lib/include/attributes.h">
 <persistable path="/Nowy/cmsis_lib/include/attributes.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32f4_i2c.c" tooltip="Nowy/cmsis_lib/source/tm_stm32f4_i2c.c">
-<persistable path="/Nowy/cmsis_lib/source/tm_stm32f4_i2c.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tm_stm32f4_delay.h" tooltip="Nowy/cmsis_lib/include/tm_stm32f4_delay.h">
-<persistable path="/Nowy/cmsis_lib/include/tm_stm32f4_delay.h"/>
 </file>
 </mruList>
 </workbench>

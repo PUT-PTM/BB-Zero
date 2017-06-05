@@ -26,33 +26,34 @@ float Gyr_Result2;
 float ax,gx,ay,gy,az,gz;
 TM_MPU6050_t MPU6050_Data0;
 
-float target_position = -2.0;
+
 float current_position;
 float error,last_error=0.0;
 float integral=0.0;
 float derivative=0.0;
 
 
-float kp=18;
-float ki=0.7;
-float kd=1;
-
 void PID(float angle)
 {
 	current_position = angle;
 
-	error = target_position - current_position;
+		error = target_position - current_position;
 
-	integral = integral + error;
+		if(integral>100) integral = 100;
+		if(integral<-100) integral = -100;
 
-	derivative = error - last_error;
+		integral = integral + error;
 
-	motor = (kp*error) + (ki*integral) + (kd*derivative);
 
-	if(motor>99) motor = 99;
-	if(motor<-99) motor = -99;
+		derivative = error - last_error;
 
-	last_error = error;
+		motor = (kp*error) + (ki*integral) + (kd*derivative);
+
+		if(motor>99) motor = 99;
+		if(motor<-99) motor = -99;
+
+		last_error = error;
+
 }
 
 TM_AHRSIMU_t IMUstruct;
