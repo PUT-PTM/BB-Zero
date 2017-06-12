@@ -14,8 +14,6 @@ void RCC_Init()
 void initAll()
 {
     RCC_Init();
-	TIM3_Init(60,15);
-	DAC_PA4_Init();
 	initWheels();
 	initBluetooth();
 }
